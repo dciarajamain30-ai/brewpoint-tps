@@ -440,7 +440,6 @@ with tab2:
                         labelColor="#c8a06a",
                         titleColor="#f5d49a",
                     )
-                    .configure_background(color="#1a1208")
                 )
                 st.altair_chart(chart, use_container_width=True)
 
