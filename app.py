@@ -383,7 +383,7 @@ with tab2:
         if df.empty:
             st.info("No transactions recorded yet. Start selling to see your report!")
         else:
-            df["timestamp"]   = pd.to_datetime(df["timestamp"])
+            df["timestamp"] = pd.to_datetime(df["timestamp"], format='mixed', dayfirst=False)
             df["total_price"] = pd.to_numeric(df["total_price"], errors="coerce").fillna(0)
             df["quantity"]    = pd.to_numeric(df["quantity"],    errors="coerce").fillna(0)
             df["unit_price"]  = pd.to_numeric(df["unit_price"],  errors="coerce").fillna(0)
