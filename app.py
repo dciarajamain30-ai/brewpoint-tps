@@ -23,16 +23,16 @@ html, body, [class*="css"] {
     font-family: 'DM Sans', sans-serif;
 }
 
-/* Dark espresso background */
+/* Cream background */
 .stApp {
-    background-color: #1a1208;
-    color: #f0e6d3;
+    background-color: #f5efe6;
+    color: #3b1f0a;
 }
 
 /* Header brand bar */
 .brand-header {
-    background: linear-gradient(135deg, #3d1f00 0%, #6b3a1f 50%, #3d1f00 100%);
-    border-bottom: 2px solid #c8853a;
+    background: linear-gradient(135deg, #4a2410 0%, #7b4020 50%, #4a2410 100%);
+    border-bottom: 3px solid #c8853a;
     padding: 18px 32px;
     margin: -1rem -1rem 2rem -1rem;
     display: flex;
@@ -42,13 +42,13 @@ html, body, [class*="css"] {
 .brand-title {
     font-family: 'DM Serif Display', serif;
     font-size: 2rem;
-    color: #f5d49a;
+    color: #fdf3e3;
     letter-spacing: 0.02em;
     margin: 0;
 }
 .brand-sub {
     font-size: 0.78rem;
-    color: #c8a06a;
+    color: #e8c99a;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     margin: 0;
@@ -56,15 +56,15 @@ html, body, [class*="css"] {
 
 /* Tab styling */
 .stTabs [data-baseweb="tab-list"] {
-    background: #2a1800;
+    background: #ecdcc8;
     border-radius: 8px;
     padding: 4px;
     gap: 4px;
-    border: 1px solid #4a2e10;
+    border: 1px solid #c8a87a;
 }
 .stTabs [data-baseweb="tab"] {
     background: transparent;
-    color: #c8a06a;
+    color: #6b3a1f;
     border-radius: 6px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
@@ -72,25 +72,26 @@ html, body, [class*="css"] {
     padding: 8px 24px;
 }
 .stTabs [aria-selected="true"] {
-    background: #c8853a !important;
-    color: #1a1208 !important;
+    background: #6b3a1f !important;
+    color: #fdf3e3 !important;
 }
 
 /* Cards */
 .card {
-    background: #2a1800;
-    border: 1px solid #4a2e10;
+    background: #fdf3e3;
+    border: 1px solid #d4aa80;
     border-radius: 12px;
     padding: 24px;
     margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(107, 58, 31, 0.08);
 }
 .card-title {
     font-family: 'DM Serif Display', serif;
     font-size: 1.1rem;
-    color: #f5d49a;
+    color: #4a2410;
     margin-bottom: 16px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #4a2e10;
+    border-bottom: 2px solid #c8853a;
 }
 
 /* Metric boxes */
@@ -101,20 +102,21 @@ html, body, [class*="css"] {
 }
 .metric-box {
     flex: 1;
-    background: #2a1800;
+    background: #fdf3e3;
     border: 1px solid #c8853a;
     border-radius: 10px;
     padding: 16px 20px;
     text-align: center;
+    box-shadow: 0 2px 6px rgba(107, 58, 31, 0.10);
 }
 .metric-val {
     font-family: 'DM Serif Display', serif;
     font-size: 1.8rem;
-    color: #f5d49a;
+    color: #4a2410;
 }
 .metric-label {
     font-size: 0.72rem;
-    color: #c8a06a;
+    color: #8b5e3c;
     text-transform: uppercase;
     letter-spacing: 0.12em;
 }
@@ -123,16 +125,16 @@ html, body, [class*="css"] {
 div[data-testid="stSelectbox"] > div,
 div[data-testid="stNumberInput"] > div > div,
 div[data-testid="stTextInput"] > div > div {
-    background: #1a1208 !important;
-    border: 1px solid #4a2e10 !important;
-    color: #f0e6d3 !important;
+    background: #fff8f0 !important;
+    border: 1px solid #c8a87a !important;
+    color: #3b1f0a !important;
     border-radius: 8px !important;
 }
 
 /* Submit button */
 div[data-testid="stButton"] > button {
-    background: linear-gradient(135deg, #c8853a, #e8a558) !important;
-    color: #1a1208 !important;
+    background: linear-gradient(135deg, #6b3a1f, #9b5a30) !important;
+    color: #fdf3e3 !important;
     font-family: 'DM Sans', sans-serif !important;
     font-weight: 600 !important;
     font-size: 1rem !important;
@@ -145,7 +147,7 @@ div[data-testid="stButton"] > button {
 }
 div[data-testid="stButton"] > button:hover {
     transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(200, 133, 58, 0.35) !important;
+    box-shadow: 0 6px 20px rgba(107, 58, 31, 0.30) !important;
 }
 
 /* Success / error */
@@ -155,39 +157,47 @@ div[data-testid="stAlert"] {
 
 /* Table */
 .stDataFrame {
-    border: 1px solid #4a2e10 !important;
+    border: 1px solid #d4aa80 !important;
     border-radius: 8px !important;
     overflow: hidden;
 }
 
 /* Label color */
 label, .stSelectbox label, .stNumberInput label, .stTextInput label {
-    color: #c8a06a !important;
+    color: #6b3a1f !important;
     font-size: 0.82rem !important;
     font-weight: 500 !important;
     letter-spacing: 0.06em !important;
     text-transform: uppercase !important;
 }
 
+/* Subheaders */
+h2, h3 {
+    color: #4a2410 !important;
+}
+
 /* Receipt preview */
 .receipt {
-    background: #f5f0e8;
-    color: #1a1208;
+    background: #fff8f0;
+    color: #3b1f0a;
     border-radius: 10px;
     padding: 20px 24px;
     font-family: 'Courier New', monospace;
     font-size: 0.85rem;
     line-height: 1.8;
     border-top: 6px dashed #c8853a;
+    border: 1px solid #d4aa80;
+    box-shadow: 0 2px 8px rgba(107, 58, 31, 0.08);
 }
 .receipt h4 {
     text-align: center;
     font-family: 'DM Serif Display', serif;
     font-size: 1.2rem;
     margin-bottom: 4px;
+    color: #4a2410;
 }
 .receipt hr { border: 1px dashed #c8853a; }
-.receipt .total { font-weight: bold; font-size: 1rem; }
+.receipt .total { font-weight: bold; font-size: 1rem; color: #4a2410; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -426,19 +436,19 @@ with tab2:
 
                 chart = (
                     alt.Chart(item_summary)
-                    .mark_bar(color="#c8853a", cornerRadiusTopLeft=4, cornerRadiusTopRight=4)
+                    .mark_bar(color="#7b4020", cornerRadiusTopLeft=4, cornerRadiusTopRight=4)
                     .encode(
                         x=alt.X("item_name:N", sort="-y", title="Item", axis=alt.Axis(labelAngle=-30)),
                         y=alt.Y("quantity:Q", title="Units Sold"),
                         tooltip=["item_name", "quantity"],
                     )
                     .properties(height=300)
-                    .configure_view(strokeWidth=0)
+                    .configure_view(strokeWidth=0, fill="#fdf3e3")
                     .configure_axis(
-                        gridColor="#2a1800",
-                        domainColor="#4a2e10",
-                        labelColor="#c8a06a",
-                        titleColor="#f5d49a",
+                        gridColor="#ecdcc8",
+                        domainColor="#d4aa80",
+                        labelColor="#6b3a1f",
+                        titleColor="#4a2410",
                     )
                 )
                 st.altair_chart(chart, use_container_width=True)
@@ -453,21 +463,20 @@ with tab2:
                 )
                 cat_chart = (
                     alt.Chart(cat_summary)
-                    .mark_bar(color="#e8a558", cornerRadiusTopLeft=4, cornerRadiusTopRight=4)
+                    .mark_bar(color="#c8853a", cornerRadiusTopLeft=4, cornerRadiusTopRight=4)
                     .encode(
                         x=alt.X("category:N", title="Category"),
                         y=alt.Y("total_price:Q", title="Revenue (GYD)"),
                         tooltip=["category", "total_price"],
                     )
                     .properties(height=250)
-                    .configure_view(strokeWidth=0)
+                    .configure_view(strokeWidth=0, fill="#fdf3e3")
                     .configure_axis(
-                        gridColor="#2a1800",
-                        domainColor="#4a2e10",
-                        labelColor="#c8a06a",
-                        titleColor="#f5d49a",
+                        gridColor="#ecdcc8",
+                        domainColor="#d4aa80",
+                        labelColor="#6b3a1f",
+                        titleColor="#4a2410",
                     )
-                    
                 )
                 st.altair_chart(cat_chart, use_container_width=True)
 
